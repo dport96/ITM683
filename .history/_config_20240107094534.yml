@@ -3,7 +3,7 @@
 
 # SITE SPECIFIC: The following fields are typically changed for each site
 name: ITM 683
-baseurl: /ITM683
+baseurl: /morea
 morea_theme: spacelab
 timezone: Pacific/Honolulu
 morea_navbar_items:
