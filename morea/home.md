@@ -4,7 +4,7 @@ morea_id: home
 morea_type: home
 published: true
 ---
-## ITM 683: Business Intelligence and Data analytics Spring 2024
+## ITM 683: Business Intelligence and Data analytics
 
 This course will explore the fundamental practices of analytics for acquiring business intelligence (BI). BI is used as input for human decisions or may drive fully automated decisions based on why some data pattern is observed, what will happen next, and how a firm can adapt to optimize that outcome. Merging developments in marketing and customer analytics with operations research, and aspects of information systems and desktop data analytics tools, the course offers a technical, quantitative program designed to hone your skill in turning data into business solutions and enable you to utilize prevalent analytics tools and methods.
 
