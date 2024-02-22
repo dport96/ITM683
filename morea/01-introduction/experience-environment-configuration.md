@@ -9,7 +9,7 @@ morea_start_date: "2021-07-07T23:00"
 morea_labels:
 ---
 
-# E01: Environment configuration
+# E01: Environment /configuration
 
 For this assignment, you will begin the process of creating a high quality
 software engineering environment on your computer.

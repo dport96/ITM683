@@ -1,15 +1,15 @@
 ---
-title: "Introduction to ICS 199"
+title: "Introduction to Business Intelligence and Analytics"
 published: true
 morea_coming_soon: false
-morea_id: example-introduction
+morea_id: module-introduction
 morea_outcomes:
   - outcome-course-structure
 morea_readings:
   - reading-syllabus
   - reading-R-vs-Python
 morea_experiences:
-  - example-gist
+  - experience-real-world-business-analytics
 morea_assessments:
 morea_type: module
 morea_icon_url: /morea/01-introduction/introduction.jpg
