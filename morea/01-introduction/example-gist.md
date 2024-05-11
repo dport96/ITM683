@@ -8,7 +8,6 @@ morea_sort_order: 6
 ---
 
 # Experience Real-World Business Analytics
-
 First, make sure you have read the HBR article [4 EXAMPLES OF BUSINESS ANALYTICS IN ACTION](https://online.hbs.edu/blog/post/business-analytics-examples)
 
 then, find a non-trivial "real" business analytics example from your work or other business-oriented function. For this example, report in terms of issues and language discussed [Exploring Business Analytics](Exploring_BA.pptx) using the following outline:
