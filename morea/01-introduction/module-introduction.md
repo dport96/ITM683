@@ -16,7 +16,7 @@ morea_icon_url: /morea/01-introduction/introduction.jpg
 morea_start_date: 
 morea_end_date: 
 morea_labels:
-morea_sort_order: 10
+morea_sort_order: 01
 ---
 
 Overview of ITM 683, and some initial tasks to get oriented and ready for the course.
