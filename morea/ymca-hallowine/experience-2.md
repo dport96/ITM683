@@ -35,112 +35,129 @@ NOTE: Do not attempt to delete or try to "fix" these outliers. The first outlier
 - Explain which problems listed previously these stats may be useful for understanding.
 - You should use the prepared data tab.
 
-1.	How many items were in the auction? By category? The largest majority of the items came from which categories?
-Suggested stats:
-·   	Make a table of the number of items per category
-·   	Pareto chart of number of items in auction by category
-·   	Summary table of total number of items, average number items per category, std dev of number items per category
-!!! Add anything you believe is useful for describing number of items in auction
- 
-2.	How much was raised by the auction? By category? Top performers of sales by category? Distribution of sales by category.
-Suggested stats:
-·   	Pareto chart of total sale price by category
-·   	Box plots of sale price by category, sorted highest to lowest median
- 
-This is helpful for understanding what we can expect in sale price for a given category and comparing categories on sale price relative to each other and sale price of all items in the auction. This information is useful for addressing the problem of accepting items for the auction (P3) because we can estimate what sale price to expect for an item. It is also useful for the problem of soliciting items for the auction (P4) because we can prioritize soliciting items from categories that bring in high sale prices. 
-·   	Summary table of total sale price (amount raised), average sales price of item, std dev of sales price
- 
-!!! Add anything you believe is useful for describing sales price
- 
- 
-3.	What was the total value of items in the auction? Top 10% and bottom 10% value items? Distribution of value by category.
-Suggested stats:
-·   	Table of item values sorted highest to lowest with percentile
-·   	Box plots of value by category, sorted highest to lowest median
-·   	Summary table of total value, average value of item, std dev of value
- 
-!!! Add anything you believe is useful for describing value of items
- 
- 
-4.	Top 10% and bottom 10% bids items? Distribution of bids by category.
-Suggested stats:
-·   	Table of item bids sorted highest to lowest with percentile
-·   	Box plots of bids by category, sorted highest to lowest median
-·   	Summary table average item bids, std dev of bids
- 
-!!! Add anything you believe is useful for describing bidder interest
- 
- 
-5.	How many items were unsold? By category? What were the top and bottom performing categories in terms of sold? What was the total OL from unsold items? By category? Distribution of OL by category.
-Suggested stats:
-·   	Pareto chart of number of sold in auction by category
-·   	Bar chart of % sold in category sorted highest to lowest
-·   	Box plots of OL from unsold by category sorted highest to lowest median
-·   	Summary table of total number items unsold,  % number of items sold (from total sold), average % sold over all categories, std dev of % sold over all categories
-·   	Summary table of total OL from unsold, average OL from unsold over all categories, std dev of OL from unsold over all categories
-!!! Add anything you believe is useful for describing unsold items in auction
- 
-6.	How many items were undersold? By category? What were the top and bottom performing categories in terms of number of items sold? What was the total OL from unsold items? By category? Distribution of OL by category. 
+1. How many items were in the auction? By category? The largest majority of the items came from which categories?  
+    ```
+    Suggested stats:
+    - Make a table of the number of items per category
+    - Pareto chart of number of items in auction by category
+    - Summary table of total number of items, average number items per category, std dev of number items per category
+
+    !!! Add anything you believe is useful for describing number of items in auction
+    ```  
+2. How much was raised by the auction? By category? Top performers of sales by category? Distribution of sales by category.  
+    ```
+    Suggested stats:  
+    Pareto chart of total sale price by category  
+    Box plots of sale price by category, sorted highest to lowest median  
+    This is helpful for understanding what we can expect in sale price for a given category and comparing categories on sale price relative to each other and sale price of all items in the auction. This information is useful for addressing the problem of accepting items for the auction (P3) because we can estimate what sale price to expect for an item. It is also useful for the problem of soliciting items for the auction (P4) because we can prioritize soliciting items from categories that bring in high sale prices.   
+    Summary table of total sale price (amount raised), average sales price of item, std dev of sales price  
+
+    !!! Add anything you believe is useful for describing sales price  
+    ```
+
+3. What was the total value of items in the auction? Top 10% and bottom 10% value items? Distribution of value by category.
+    ```
+    Suggested stats:
+    Table of item values sorted highest to lowest with percentile
+    Box plots of value by category, sorted highest to lowest median
+    Summary table of total value, average value of item, std dev of value
+
+    !!! Add anything you believe is useful for describing value of items
+    ```
+
+4. Top 10% and bottom 10% bids items? Distribution of bids by category.
+    ```
+    Suggested stats:
+    Table of item bids sorted highest to lowest with percentile
+    Box plots of bids by category, sorted highest to lowest median
+    Summary table average item bids, std dev of bids
+
+    !!! Add anything you believe is useful for describing bidder interest
+    ```
+
+5. How many items were unsold? By category? What were the top and bottom performing categories in terms of sold? What was the total OL from unsold items? By category? Distribution of OL by category.  
+    ```
+    Suggested stats:
+    Pareto chart of number of sold in auction by category
+    Bar chart of % sold in category sorted highest to lowest
+    Box plots of OL from unsold by category sorted highest to lowest median
+    Summary table of total number items unsold,  % number of items sold (from total sold), average % sold over all categories, std dev of % sold over all categories
+    Summary table of total OL from unsold, average OL from unsold over all categories, std dev of OL from unsold over all categories
+    !!! Add anything you believe is useful for describing unsold items in auction
+    ```
+
+6. How many items were undersold? By category? What were the top and bottom performing categories in terms of number of items sold? What was the total OL from unsold items? By category? Distribution of OL by category. 
 Note: do not include unsold items 
-Suggested stats:
-·   	Pareto chart of number of not undersold in auction by category
- 
-These graps are helpful for addressing the problem of undersold items (P2). The chart shows that about 70% of the not undersold items came from Restaurant, Food, Misc, Wine, Sports fitness. This graph also shows that 60% of the undersold items came from Misc, Health & Beauty, Kid’s stuff, Houseware, Sport fitness. Keep in mind that there are different numbers of items in each category.
-·   	Bar chart of % not undersold in category sorted highest to lowest
-·   	Box plots of OL from undersold by category sorted highest to lowest median
-·   	Summary table of total number items undersold,  % number of items undersold (from total sold), average % undersold over all categories, std dev of % undersold over all categories
-·   	Summary table of total OL from undersold, average OL from undersold over all categories, std dev of OL from undersold over all categories
-!!! Add anything you believe is useful for describing undersold items in auction
- 
-7.	What is the distribution of size of the items? What is the typical size of an item per category? What was the number of unsold and OL from unsold by size? What was the number of undersold and OL from undersold by size?
-Suggested stats:
-·   	Pie chart of item sizes
-·   	Table of modes of size by category
-·   	Pareto of number unsold by size
-·   	Pareto of OL unsold by size
-·   	Pareto of number undersold by size
-·   	Pareto of OL undersold by size
-·   	Summary table of total OL unsold+undersold, average OL, std dev OL by size
- 
-!!! Add anything you believe is useful for describing sizes of items in auction
- 
-8.	How percentage of items were solicited vs unsolicited? What categories were the most and least solicited? What is the sales % for solicited vs. unsolicited items? What is the distribution of OL for solicited vs. unsolicited?
-Suggested stats:
-·   	Pareto chart of number of solicited items by category
-·   	Box plots of OL for solicited vs. unsolicited
-·   	Box plots of OL for solicited and unsolicited by category
-·   	Table of summary stats % solicited, % unsolicited, total OL solicited, total OL unsolicited
-!!! Add anything you believe is useful for describing solicited vs unsolicited items in the auction
-9.	Did the auction perform as expected in terms of sales vs value (higher value items sell for more)? Did min bid perform as expected (frequency of sales/value for sold items over 40% for given min bid/value, frequency of sold for given min bid/value)? Did increment perform as expected (frequency of  sales/value for sold items over 40% for given increment/min bid, number of bids for min bid/value)? Does it appear that min bid was set based on value? Does it appear that the increment was set based on min bid? Did category matter in setting the min bid?
-Suggested stats:
-·   	Scatter plot of sale price vs value with linear trend
-·   	Scatter plot of min bid vs value
- 
-We see a clear association between min bid and value providing evidence that the mon bid was predominantly set based on item value. For low-value items, it is always nearly 40% of the value. For higher-value items this varies notably but is still typically around 40%.
-·   	Scatter plot of sale price vs value by categories with linear trend for each category
-·   	Scatter plot of increment vs min bid
-·   	Histogram of not undersold items for ranges of min bid/value
-·   	Histogram of number of sold items for ranges of min bid/value
-·   	Histogram of not undersold items for ranges of increment/min bid
-·   	Histogram of bids for ranges of increment/min bid
-* Scatterplots may be more useful than histograms for the above
-!!! Add anything you believe is useful for describing expected relationships  
-10. How many items were missing min bid? Missing increment? What was the total OL from missing min bids? What was the total OL from missing increments? What categories of items had the most missing min bids or increments? Did it matter if the item was solicited or unsolicited?
-Suggested stats:
-·   	Table of total number of items missing min bid, total number of items missing increment, total OL form missing min bid, total OL form missing increment
-·   	Same as above by category
-·   	Same as above by solicited and unsolicited
-·   	Pareto chart of number of missing min bids by category
-·   	Pareto chart of number of missing increments by category
-!!! Add anything you believe is useful for describing missing min bids and increments  
- 
-11.  How many items was the min bid not enforced? OL for this? How many items was the increment not enforced? OL for this?
-Suggested stats:
-·   	Table of total number of items min bid not enforced, total number of items increment not enforced, total OL form not enforcing min bid, total OL form not enforcing increment
-·   	Same table as above by category
-·   	Same as above by solicited and unsolicited
-·   	Pareto chart of number of unenforced min bids by category
-·   	Pareto chart of the number of unenforced increments by category
-!!! Add anything you believe is useful for describing enforcement of min bids and increments  
-12.  [open]
-Add useful questions and descriptive stats to address them not covered by any of the above.
+    ```
+    Suggested stats:
+    Pareto chart of number of not undersold in auction by category
+    Bar chart of % not undersold in category sorted highest to lowest
+    Box plots of OL from undersold by category sorted highest to lowest median
+    Summary table of total number items undersold,  % number of items undersold (from total sold), average % undersold over all categories, std dev of % undersold over all categories
+    Summary table of total OL from undersold, average OL from undersold over all categories, std dev of OL from undersold over all categories
+    !!! Add anything you believe is useful for describing undersold items in auction
+    ```
+
+7. What is the distribution of size of the items? What is the typical size of an item per category? What was the number of unsold and OL from unsold by size? What was the number of undersold and OL from undersold by size?
+    ```
+    Suggested stats:
+    Pie chart of item sizes
+    Table of modes of size by category
+    Pareto of number unsold by size
+    Pareto of OL unsold by size
+    Pareto of number undersold by size
+    Pareto of OL undersold by size
+    Summary table of total OL unsold+undersold, average OL, std dev OL by size
+    
+    !!! Add anything you believe is useful for describing sizes of items in auction
+    ```
+8. How percentage of items were solicited vs unsolicited? What categories were the most and least solicited? What is the sales % for solicited vs. unsolicited items? What is the distribution of OL for solicited vs. unsolicited?  
+    ```
+    Suggested stats:
+    Pareto chart of number of solicited items by category
+    Box plots of OL for solicited vs. unsolicited
+    Box plots of OL for solicited and unsolicited by category
+    Table of summary stats % solicited, % unsolicited, total OL solicited, total OL unsolicited
+    !!! Add anything you believe is useful for describing solicited vs unsolicited items in the auction  
+    ```
+
+9.	Did the auction perform as expected in terms of sales vs value (higher value items sell for more)? Did min bid perform as expected (frequency of sales/value for sold items over 40% for given min bid/value, frequency of sold for given min bid/value)? Did increment perform as expected (frequency of  sales/value for sold items over 40% for given increment/min bid, number of bids for min bid/value)? Does it appear that min bid was set based on value? Does it appear that the increment was set based on min bid? Did category matter in setting the min bid?  
+    ```
+    Suggested stats:
+    Scatter plot of sale price vs value with linear trend
+    Scatter plot of min bid vs value
+    We see a clear association between min bid and value providing evidence that the mon bid was predominantly set based on item value. For low-value items, it is always nearly 40% of the value. For higher-value items this varies notably but is still typically around 40%.
+    Scatter plot of sale price vs value by categories with linear trend for each category
+    Scatter plot of increment vs min bid
+    Histogram of not undersold items for ranges of min bid/value
+    Histogram of number of sold items for ranges of min bid/value
+    Histogram of not undersold items for ranges of increment/min bid
+    Histogram of bids for ranges of increment/min bid
+    * Scatterplots may be more useful than histograms for the above
+    !!! Add anything you believe is useful for describing expected relationships  
+    ```  
+1.  How many items were missing min bid? Missing increment? What was the total OL from missing min bids? What was the total OL from missing increments? What categories of items had the most missing min bids or increments? Did it matter if the item was solicited or unsolicited?
+    ```
+    Suggested stats:
+    Table of total number of items missing min bid, total number of items missing increment, total OL form missing min bid, total OL form missing increment
+    Same as above by category
+    Same as above by solicited and unsolicited
+    Pareto chart of number of missing min bids by category
+    Pareto chart of number of missing increments by category
+    !!! Add anything you believe is useful for describing missing min bids and increments 
+    ``` 
+10. How many items was the min bid not enforced? OL for this? How many items was the increment not enforced? OL for this?  
+    ```
+    Suggested stats:
+    Table of total number of items min bid not enforced, total number of items increment not enforced, total OL form not enforcing min bid, total OL form not enforcing increment
+    Same table as above by category
+    Same as above by solicited and unsolicited
+    Pareto chart of number of unenforced min bids by category
+    Pareto chart of the number of unenforced increments by category
+    !!! Add anything you believe is useful for describing enforcement of min bids and increments  
+    ```
+    
+11. **Open** 
+    ```
+    Add useful questions and descriptive stats to address them not covered by any of the above.
+    ```
