@@ -15,3 +15,6 @@ morea_sort_order: 1
 # Step 6. Implementing the solution
 * How will the analysis results be used to make the decisions?  
 * What resources or limitations do we need to consider?  
+
+## Exercise 5
+[Download Exercise 5](docs/ymca_exercise_5.docx)

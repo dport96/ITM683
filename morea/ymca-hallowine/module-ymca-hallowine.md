@@ -11,7 +11,7 @@ morea_readings:
   - reading-part-2
   - reading-forbes-five-key-data-vis
 morea_experiences:
-  - experience-ymca-hallowine-problem-analysis
+  - experience-exercise-1
   - experience-exercise-2
   - experience-exercise-3
   - experience-exercise-4
@@ -19,7 +19,7 @@ morea_experiences:
   - experience-ymca-dashboard-project 
 morea_assessments:
 morea_type: module
-morea_icon_url: 
+morea_icon_url: /morea/ymca-hallowine/imgs/ymca-logo.jpg
 morea_start_date: 
 morea_end_date: 
 morea_labels:

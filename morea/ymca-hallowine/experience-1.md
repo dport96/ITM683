@@ -1,9 +1,9 @@
 ---
-title: "1. Problem Analysis"
+title: "1. Recognizing the Problem"
 published: true
-morea_id: experience-ymca-hallowine-problem-analysis
+morea_id: experience-exercise-1
 morea_type: experience
-morea_summary: "Analyzing the problems at the foundation of the case"
+morea_summary: ""
 morea_sort_order: 1
 morea_labels: "Exercise 1"
 morea_enable_toc: true
@@ -19,7 +19,8 @@ For the YMCA Hallowine case, we need to understand the following:
 ### P1: Items went unsold. 
 Would like to have 100% sale of all items since there is no salvage value. We want to understand better what kinds of items are of high interest and would likely sell and what affects if an item will sell. What items attract people to attend the event (sells tickets to the event).
 ### P2: Items were undersold.  
-The problem in the previous auction is that some items were undersold. As a charity event, underselling may represent a missed opportunity to maximize the funds raised for the charitable cause. Organizers typically aim to encourage competitive bidding to ensure that items are sold at their fair market value or even above it. Strategies such as providing detailed item descriptions, highlighting the value or uniqueness of items, and creating a lively bidding atmosphere can help mitigate underselling and boost fundraising efforts. We would like to have 0% undersold items.
+The problem in the previous auction is that some items were undersold. As a charity event, underselling may represent a missed opportunity to maximize the funds raised for the charitable cause. Organizers typically aim to encourage competitive bidding to ensure that items are sold at their fair market value or even above it. Strategies such as providing detailed item descriptions, highlighting the value or uniqueness of items, and creating a lively bidding atmosphere can help mitigate underselling and boost fundraising efforts. We would like to have 0% undersold items.  
+
 ### P3: Problem with accepting donated items for the auction.  
 There could be a possible issue with accepting donated items for the auction if there is a low possibility of the item being bidded on and bought (unsold). It would be counterintuitive for the auction to accept donated items that are not going to have a high probability of being bidded on as there is no salvage value for each item and there is a limited amount of space for the items, meaning that items on the auction that are not sold have opportunity loss. This can be seen in the data sheet when examining the kinds of auction items that did not sell or were undersold in terms of category and identifying that some categories are not performing well, what values of items in those categories underperformed, and the degree of interest in given items in 
 
@@ -47,6 +48,7 @@ Bid increment is clearly dependent on value. The higher the value of an item, th
 
 ### P8: Increments were not enforced.  
 There are items that met the mid bid, but did not follow the bid increments. The goal of the bid increments is to maximize the amount per bid to maximize the sale price. If the bid increment is not enforced, it is difficult for us to manage the auction in terms of selling the items for more than 40% of their values. Many items were undersold which may be in part due to do not enforcing bid increments. We should look at the items that did not follow the bid increment, and investigate if they sold more than 40% of their value. With this, we can have a better idea of how bad of a problem this is if the increment is not enforced.  
+
 ### P9: Problem with missing min bid and bid increment.
 There were items with missing minimum bid and bid increments. A problem with missing minimum bids or bid increments could be that the items undersell. A benefit of missing bids or bid increments is that items that are at risk in being unsold may be more likely to sell. The main problem with this is that for items that are missing data, it makes the item more difficult to manage. What happens when the min bid and increment are not set is that we do not have any control over the sales price. This makes the items for the auction set into a free-for-all. We want to set the min bid and increments to make people interested in the auction? We expect min bid and increments to be set to help manage our goals, when we don’t set it, it becomes a problem because we may not achieve our goals and increases the variation (higher risk) that we are not going to achieve certain goals.  
 

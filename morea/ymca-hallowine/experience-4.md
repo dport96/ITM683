@@ -11,4 +11,7 @@ morea_sort_order: 1
 * What models and techniques are needed to address the questions?
 * What is the best representation to plot a distribution?
 * What are the assumptions we need to make?
-* Are the assumptions reasonable? How will they affect our models?
+* Are the assumptions reasonable? How will they affect our models?  
+
+## Exercise 4
+[Download Exercise 4](docs/ymca_exercise_4.docx)
