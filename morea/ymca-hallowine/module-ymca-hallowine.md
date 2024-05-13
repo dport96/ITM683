@@ -9,12 +9,13 @@ morea_readings:
   - reading-ymca-hallowine-overview
   - reading-ba-problem-solving-process
   - reading-part-2
+  - reading-forbes-five-key-data-vis
 morea_experiences:
   - experience-ymca-hallowine-problem-analysis
-  - experience-part-2
-  - experience-part-3
-  - experience-part-4
-  - experience-part-5
+  - experience-exercise-2
+  - experience-exercise-3
+  - experience-exercise-4
+  - experience-exercise-5
   - experience-ymca-dashboard-project 
 morea_assessments:
 morea_type: module

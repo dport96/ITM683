@@ -3,7 +3,7 @@ title: "Problem Solving and Decision Making"
 published: true  
 morea_id: reading-ba-problem-solving-process 
 morea_type: reading  
-morea_summary: "Read"
+morea_summary: ""
 morea_labels: "Overview"
 morea_sort_order: 2  
 ---   
@@ -11,8 +11,8 @@ morea_sort_order: 2
 Business Analytics represents only a portion of the overall problem solving and decision making process.  
 
 # Presentations to Review  
-[Decision Models and Problem Solving]()  
-[Introduction to Decision Modeling]()
+[Decision Models and Problem Solving](docs/Decision_Models_and_Problem_Solving.pptx)  
+[Introduction to Decision Modeling](docs/Intro_Decision_modeling.pptx)
 
 ## Decision Models  
 **Deterministic** - prescriptive models have inputs that are known with certainty.  

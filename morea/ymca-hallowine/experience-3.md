@@ -1,9 +1,10 @@
 ---
 title: "3. Structuring the Problem"
 published: true  
-morea_id: experience-part-3
+morea_id: experience-exercise-3
 morea_type: experience  
-morea_summary: "Summary that is placed on the card in the module"
+morea_summary: ""
+morea_labels: "Exercise 3"
 morea_sort_order: 1  
 ---  
 # Step 3. Structuring the problem

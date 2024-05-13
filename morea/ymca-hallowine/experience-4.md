@@ -1,9 +1,10 @@
 ---
 title: "4. Analyzing the problem"
 published: true  
-morea_id: experience-part-4
+morea_id: experience-exercise-4
 morea_type: experience  
-morea_summary: "Summary that is placed on the card in the module"
+morea_summary: ""
+morea_labels: "Exercise 4"
 morea_sort_order: 1  
 ---  
 # Step 4. Analyzing the problem

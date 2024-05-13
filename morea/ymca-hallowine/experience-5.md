@@ -1,9 +1,10 @@
 ---
 title: "5. Interpreting Results and Making a Decision"
 published: true  
-morea_id: experience-part-5  
+morea_id: experience-exercise-5  
 morea_type: experience  
-morea_summary: "Summary that is placed on the card in the module"
+morea_summary: ""
+morea_labels: "Exercise 5"
 morea_sort_order: 1  
 ---  
 # Step 5. Interpreting Results and Making a Decision

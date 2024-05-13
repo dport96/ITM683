@@ -1,10 +1,12 @@
 ---
 title: "2. Data Exploration and Preparation"
 published: true  
-morea_id: experience-part-2 
+morea_id: experience-exercise-2 
 morea_type: experience  
-morea_summary: "Summary that is placed on the card in the module"
+morea_summary: ""  
+morea_labels: "Exercise 2"
 morea_sort_order: 1  
+
 ---  
 # Defining the problem
 * What decisions need to be made?
@@ -31,4 +33,4 @@ Analyze total revenue by category, top performers in terms of sales, and distrib
 Investigate correlations between variables such as sales price, value, minimum bid, and increment. Understand the impact of these variables on auction outcomes and decision-making processes.
 
 ## Exercise 2
-[Download Exercise 2](docs/ymca_step_2.docx)
+[Download Exercise 2](docs/ymca_exercise_2.docx)
