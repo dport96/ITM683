@@ -15,7 +15,6 @@ morea_experiences:
   - experience-exercise-2
   - experience-exercise-3
   - experience-exercise-4
-  - experience-exercise-5
   - experience-ymca-dashboard-project 
 morea_assessments:
 morea_type: module

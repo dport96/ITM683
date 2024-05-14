@@ -1,5 +1,5 @@
 ---
-title: "Hallowine Dashboard Project"
+title: "5. Implementing the solution"
 published: true  
 morea_id: experience-ymca-dashboard-project 
 morea_type: experience  
