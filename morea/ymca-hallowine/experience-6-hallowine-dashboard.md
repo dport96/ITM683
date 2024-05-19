@@ -1,9 +1,9 @@
 ---
-title: "5. Implementing the solution"
+title: "<img src='../../images/ProcessStep6.png' alt='' class='img-fluid rounded-circle mx-auto d-block' width='50' height='50'"
 published: true  
 morea_id: experience-ymca-dashboard-project 
 morea_type: experience  
-morea_summary: "Create a dashboard showcasing all of the data analyzed from previous experiences"
+morea_summary: "Step 6. implement an analytics dashboard"
 morea_sort_order: 5  
 morea_labels: Dashboard Project
 ---  

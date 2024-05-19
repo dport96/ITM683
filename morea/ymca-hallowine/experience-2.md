@@ -1,9 +1,13 @@
 ---
-title: "2. Data Exploration and Preparation"
+title: "
+<div class='d-flex justify-content-center'>
+<img src='../../images/ProcessStep2.png' class='img-fluid rounded-circle mx-auto d-block' width='50' height='50'>
+<img src='../../images/ProcessStep3.png' class='img-fluid rounded-circle mx-auto d-block' width='50' height='50'>
+</div>"
 published: true  
 morea_id: experience-exercise-2 
 morea_type: experience  
-morea_summary: ""  
+morea_summary: "Step 2-3. Data Preparation and Exploration"  
 morea_labels: "Exercise 2"
 morea_sort_order: 1  
 

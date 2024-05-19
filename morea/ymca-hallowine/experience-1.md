@@ -1,13 +1,13 @@
 ---
-title: "1. Recognizing the problem"
+title: "<img src='../../images/ProcessStep1.png' alt='' class='img-fluid rounded-circle mx-auto d-block' width='50' height='50'>"
 published: true
 morea_id: experience-exercise-1
 morea_type: experience
-morea_summary: ""
+morea_summary: "Step 1. Recognizing the problem"
 morea_sort_order: 1
 morea_labels: "Exercise 1"
 morea_enable_toc: true
----  
+---
 # Recognizing the problem  
 For the YMCA Hallowine case, we need to understand the following:
 * Identify problems in the previously held Hallowine auction and what is wanted from future events?  

@@ -1,9 +1,9 @@
 ---
-title: "4. Predictive and Prescriptive Analytics"
+title: "<img src='../../images/ProcessStep5.png' alt='' class='img-fluid rounded-circle mx-auto d-block' width='50' height='50'"
 published: true  
 morea_id: experience-exercise-4
 morea_type: experience  
-morea_summary: ""
+morea_summary: "Step 5. Predictive and Prescriptive Analytics"
 morea_labels: "Exercise 4"
 morea_sort_order: 1  
 ---  

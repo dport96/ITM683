@@ -1,9 +1,9 @@
 ---
-title: "3. Performance Reports"
+title: "<img src='../../images/ProcessStep4.png' alt='' class='img-fluid rounded-circle mx-auto d-block' width='50' height='50'"
 published: true  
 morea_id: experience-exercise-3
 morea_type: experience  
-morea_summary: ""
+morea_summary: "Step 4. Performance Reports"
 morea_labels: "Exercise 3"
 morea_sort_order: 1  
 ---  
