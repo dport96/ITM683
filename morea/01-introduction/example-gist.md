@@ -5,6 +5,7 @@ morea_id: experience-real-world-business-analytics
 morea_type: experience
 morea_summary: "Investigate and report on a real-world application of business analytics."
 morea_sort_order: 6
+morea_icon_url: /morea/01-introduction/introduction.jpg
 ---
 
 # Experience Real-World Business Analytics
