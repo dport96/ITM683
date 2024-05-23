@@ -16,7 +16,7 @@ logger_factory:
   Morea: error
 
 # MOREA PORTAL: The following fields are only needed if this site is part of a "Morea Portal".
-# morea_course: ics311
+morea_course: itm683
 # morea_domain: http://morea-framework.github.io/
 # morea_google_analytics_tracking_id: "<your tracking id here>"
 # morea_head_breadcrumb_link: "http://cnn.com"
