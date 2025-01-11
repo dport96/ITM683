@@ -4,10 +4,11 @@ published: true
 morea_coming_soon: false
 morea_id: module-introduction
 morea_outcomes:
-  - outcome-course-structure
+  - outcome-course-introduction
 morea_readings:
-  - reading-syllabus
-  - reading-R-vs-Python
+  - reading-business-student-analytics
+  - reading-business-analytics-examples
+  - reading-intro-bi-analytics
 morea_experiences:
   - experience-real-world-business-analytics
 morea_assessments:
