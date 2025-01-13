@@ -10,6 +10,7 @@ morea_readings:
   - reading-business-analytics-examples
   - reading-intro-bi-analytics
 morea_experiences:
+  - experience-exploring-bi-analytics
   - experience-real-world-business-analytics
 morea_assessments:
 morea_type: module
