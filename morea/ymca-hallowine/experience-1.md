@@ -8,6 +8,8 @@ morea_sort_order: 1
 morea_labels: "Exercise 1"
 morea_enable_toc: true
 ---
+[YMCA Case Study Exercise Step1](https://docs.google.com/document/d/16L4cdwYV-ZUprxJmaGXhRHE_yyX4SsQ2639lqD2nOg4/edit?usp=sharing)
+
 # Recognizing the problem  
 For the YMCA Hallowine case, we need to understand the following:
 * Identify problems in the previously held Hallowine auction and what is wanted from future events?  
