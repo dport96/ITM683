@@ -10,6 +10,7 @@ morea_readings:
 #  - reading-ba-problem-solving-process
 #  - reading-part-2
   - reading-forbes-five-key-data-vis
+  - reading-how-to-lie-stat
 morea_experiences:
   - experience-exercise-1
   - experience-exercise-2

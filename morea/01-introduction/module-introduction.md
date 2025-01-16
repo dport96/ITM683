@@ -9,6 +9,7 @@ morea_readings:
   - reading-business-student-analytics
   - reading-business-analytics-examples
   - reading-intro-bi-analytics
+  - reading-stats-review
 morea_experiences:
   - experience-exploring-bi-analytics
   - experience-real-world-business-analytics
