@@ -15,9 +15,8 @@ morea_experiences:
 morea_assessments:
 morea_type: module
 morea_icon_url: /morea/01-introduction/introduction.jpg
-morea_start_date: 
-morea_end_date: 
-morea_labels:
+morea_start_date:
+morea_end_date:
 morea_sort_order: 01
 ---
 

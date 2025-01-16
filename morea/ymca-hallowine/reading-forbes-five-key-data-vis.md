@@ -7,6 +7,5 @@ morea_url: https://www.forbes.com/sites/forbestechcouncil/2023/01/04/five-key-co
 morea_type: reading
 morea_sort_order: 6 
 morea_labels:
- - "External Link"
- - "Dashboard Project"
+ - "Article"
 ---

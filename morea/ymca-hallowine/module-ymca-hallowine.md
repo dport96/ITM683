@@ -7,8 +7,8 @@ morea_outcomes:
   - outcome-hallowine
 morea_readings:
   - reading-ymca-hallowine-overview
-  - reading-ba-problem-solving-process
-  - reading-part-2
+#  - reading-ba-problem-solving-process
+#  - reading-part-2
   - reading-forbes-five-key-data-vis
 morea_experiences:
   - experience-exercise-1
@@ -18,10 +18,10 @@ morea_experiences:
   - experience-ymca-dashboard-project 
 morea_assessments:
 morea_type: module
-morea_icon_url: /morea/ymca-hallowine/imgs/ymca-logo.jpg
-morea_start_date: 
-morea_end_date: 
+morea_icon_url: "/morea/ymca-hallowine/imgs/ymca-logo.jpg"
+morea_start_date:
+morea_end_date:
 morea_labels:
 morea_sort_order: 02
 ---
-Assisting the HalloWine fundraising auction with identifying the most profitable/items most likely to be sold 
+Improving fundraising for the YMCA HalloWine silent auction event

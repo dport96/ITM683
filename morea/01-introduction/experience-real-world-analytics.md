@@ -4,8 +4,10 @@ published: true
 morea_id: experience-real-world-business-analytics
 morea_type: experience
 morea_summary: "Investigate and report on a real-world application of business analytics."
-morea_sort_order: 2
-morea_labels: "assignment"
+morea_sort_order: 3
+morea_labels: 
+    - assignment
+morea_start_date: "2025-01-21T18:00"
 ---
 
 # Objective:

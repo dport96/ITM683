@@ -2,9 +2,6 @@
 layout: default
 title: Schedule
 ---
-<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
-<meta http-equiv="Pragma" content="no-cache">
-<meta http-equiv="Expires" content="0">
 {% include breadcrumb-2.html %}
 
 <!--
@@ -39,10 +36,6 @@ title: Schedule
     background-color: white;
     padding: 20px;
     z-index: 10000;
-  }
-
-  .fc-day-today {
-    background-color: #d8de25 !important;
   }
 </style>
 <script src="//cdn.jsdelivr.net/npm/fullcalendar@5.8.0/main.min.js"></script>
@@ -80,15 +73,17 @@ title: Schedule
 ]};
 </script>
 
-<!-- This is the select box populated with the array of course_sections set in _config.yml. The selected option 
+<!-- This is the select box populated with the array of course_sections set in _config.yml. The selected option
 is used to filter calender events displayed. -->
 <div style="margin-bottom: 10px" class="container">
   <h1>Schedule</h1>
   <div id="modal_overlay">
-    <div id="modal_content">
-      <select id="sectionSelect">
-        <option value="none">Please Select a Section</option>
-      </select>
+    <div class="modal_content" id="modal_content">
+      <div id="form-group">
+        <select class="form-control" style="width:auto" id="sectionSelect">
+          <option value="none">Select a Section</option>
+        </select>
+      </div>
     </div>
   </div>
   <div id='calendar'></div>
@@ -96,12 +91,13 @@ is used to filter calender events displayed. -->
 
 <script>
   function setCalendar() {
-    // Get the events for the selected section. Events with "none" as the section appear in all calendars. For backward compatibility when no sections are defined for the start_date, the event section is set to "none". The moreaCourseSections.length === 0 check is for backward compatibility when no course sections are defined. 
+    // Get the events for the selected section. Events with "none" as the section appear in all calendars. For backward compatibility when no sections are defined for the start_date, the event section is set to "none". The moreaCourseSections.length === 0 check is for backward compatibility when no course sections are defined.
     let sectionEventData = moreaEventData.filter(obj => (obj.section === $("#sectionSelect").val() || obj.section === "none") || moreaCourseSections.length === 0);
     var calendarEl = document.getElementById('calendar');
     var calendar = new FullCalendar.Calendar(calendarEl, {
       initialView: 'dayGridMonth',
       eventColor: '#446e9b',
+      // initialDate: "2024-11-01",
       eventSources: [{ events: sectionEventData }, holidayData]
     });
     calendar.render();
@@ -111,7 +107,7 @@ is used to filter calender events displayed. -->
   // Add course section select options
   let selectBox = $("#sectionSelect");
   // For backward compatibility, remove the selector if there is no array of course sections defined
-  if (moreaCourseSections.length === 0) {
+  if (moreaCourseSections == null || moreaCourseSections.length === 0) {
     $('#modal_overlay').remove();
     selectBox.remove();
   } else {
@@ -127,7 +123,7 @@ is used to filter calender events displayed. -->
         $('#modal_overlay').attr('id', '');
         $('#modal_content').attr('id', '');
       } else {
-        // No section has been selected yet, so model the selection box until a section is made       
+        // No section has been selected yet, so model the selection box until a section is made
         selectBox.on('click', function (event) {
           event.preventDefault();
           event.stopPropagation();
