@@ -1,9 +1,9 @@
 ---
-title: "Report on Real-World Business Analytics"
+title: "Presentation on Contemporary Real-World Business Analytics"
 published: true
 morea_id: experience-contemporary-BI
 morea_type: experience
-morea_summary: "Present a real-world application of business analytics."
+morea_summary: "Present real-world applications of business analytics."
 morea_sort_order: 4
 morea_labels: 
     - assignment
