@@ -13,6 +13,7 @@ morea_readings:
 morea_experiences:
   - experience-exploring-bi-analytics
   - experience-real-world-business-analytics
+  - experience-contemporary-BI
 morea_assessments:
 morea_type: module
 morea_icon_url: /morea/01-introduction/introduction.jpg
