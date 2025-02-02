@@ -12,6 +12,7 @@ morea_readings:
   - reading-forbes-five-key-data-vis
   - reading-how-to-lie-stat
 morea_experiences:
+- experience-AI-data-prep-and-prob-recognition
 #  - experience-exercise-1
 #  - experience-exercise-2
 #  - experience-exercise-3
