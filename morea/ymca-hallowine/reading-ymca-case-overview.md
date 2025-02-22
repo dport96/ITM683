@@ -1,5 +1,5 @@
 ---
-title: "1. Case Overview"
+title: "Case Overview"
 published: true  
 morea_id: reading-ymca-hallowine-overview  
 morea_type: reading  
