@@ -12,6 +12,7 @@ morea_experiences:
  - experience-LNHR-step1
  - experience-LNHR-step2
  - experience-LNHR-step3
+ - experience-LNHR-step4
 morea_assessments:
   # - assessment-CHANGE-ME
 morea_type: module
