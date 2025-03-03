@@ -9,12 +9,16 @@ morea_outcomes:
 morea_readings:
  - reading-LNHR-case-overview
  - reading-p-values
+ - reading-causality
 morea_experiences:
  - experience-LNHR-step1
  - experience-LNHR-step2
  - experience-LNHR-step3
  - experience-LNHR-step4
  - experience-hypothesis-testing-BI
+ - experience-time-series-eda
+ - experience-causality
+ - experience-exploring-analytics-modeling
 morea_assessments:
   # - assessment-CHANGE-ME
 morea_type: module
