@@ -7,6 +7,7 @@ morea_prerequisites:
 morea_outcomes:
   # - outcome-CHANGE-ME
 morea_readings:
+ - reading-stats-review-R
  - reading-LNHR-case-overview
  - reading-p-values
  - reading-causality
