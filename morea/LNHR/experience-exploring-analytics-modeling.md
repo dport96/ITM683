@@ -15,4 +15,6 @@ It is R-notebook markdown. You can copy and paste the contents below into an R-n
 
 The exploration assumes you have done the pre-case analytics part 1 indicated in the [Step 3: Process Your Data for Analysis  and Understand Your Data Set](experience-LNHR-step3.html) Experience. In particular, you will need to have the LNHR dataframe with the number of drinks columns.
 
+There are no exercises to questions to answer. It is recommended that you read through the notebook and try the R-code given so you can see the results being discussed. Alternatively you can knit the notebook into a Word or PDF or HTML file which will execute all the code chunks. You can then just read the knitted document with all the results. 
+
 <iframe style="width: 100%; height: 500px;" src="https://docs.google.com/document/d/1iwJ3ZQALck4lV3mC4R9wPJN7PwOyPcRypUqv5xKPURg/edit?usp=drive_link">
