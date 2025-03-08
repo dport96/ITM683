@@ -16,6 +16,8 @@ morea_experiences:
  - experience-LNHR-step2
  - experience-LNHR-step3
  - experience-LNHR-step4
+ - experience-LNHR-step5
+ - experience-LNHR-step6
  - experience-hypothesis-testing-BI
  - experience-time-series-eda
  - experience-causality

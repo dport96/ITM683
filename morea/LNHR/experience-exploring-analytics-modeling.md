@@ -8,6 +8,7 @@ morea_start_date:
 morea_labels:
     - exploration
     - AI and BI analytics
+    - Extra credit
 ---
 This is an exploration of using AI and an R to explore the question of estimating the average number of drinks per customer from revenue data only.
 
