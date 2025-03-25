@@ -10,7 +10,7 @@ morea_readings:
    - reading-mba-admit
    - reading-classification
 morea_experiences:
-  # - experience-CHANGE-ME
+   - experience-classification-part1
 morea_assessments:
   # - assessment-CHANGE-ME
 morea_type: module
