@@ -11,6 +11,7 @@ morea_readings:
    - reading-classification
 morea_experiences:
    - experience-classification-part1
+   - experience-classification-part2
    - experience-mba-admit-step1
    - experience-mba-admit-step2
 morea_assessments:
