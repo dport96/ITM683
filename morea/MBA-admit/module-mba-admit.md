@@ -14,6 +14,10 @@ morea_experiences:
    - experience-classification-part2
    - experience-mba-admit-step1
    - experience-mba-admit-step2
+   - experience-mba-admit-step3
+   - experience-mba-admit-step4
+   - experience-mba-admit-step5
+   - experience-mba-admit-step6
 morea_assessments:
   # - assessment-CHANGE-ME
 morea_type: module
