@@ -9,9 +9,12 @@ morea_outcomes:
 morea_readings:
    - reading-mba-admit
    - reading-classification
+   - reading-mba-admit-risk
+   - reading-clustering
 morea_experiences:
    - experience-classification-part1
    - experience-classification-part2
+   - experience-clustering
    - experience-mba-admit-step1
    - experience-mba-admit-step2
    - experience-mba-admit-step3
