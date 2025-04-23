@@ -2,11 +2,12 @@
 title: "MicroSlo Price and Advertising"
 published: true
 morea_coming_soon: false
-morea_id: module-CHANGE-ME
+morea_id: module-microslo-optimization
 morea_prerequisites:
 morea_outcomes:
   # - outcome-CHANGE-ME
 morea_readings:
+  - reading-microslo-optimization
   - reading-marketing-analytics
 morea_experiences:
   - experience-optimization
