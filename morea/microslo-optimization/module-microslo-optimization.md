@@ -9,8 +9,11 @@ morea_outcomes:
 morea_readings:
   - reading-microslo-optimization
   - reading-marketing-analytics
+  - reading-microslo-uncertainty
+  - reading-monte-carlo
 morea_experiences:
   - experience-optimization
+  - experience-monte-carlo
 morea_assessments:
   # - assessment-CHANGE-ME
 morea_type: module
