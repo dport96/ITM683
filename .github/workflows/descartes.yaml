@@ -36,12 +36,12 @@ jobs:
           ref: main
           path: current-repo
       
-      - name: Remote Descartes Course repository
+      - name: Checkout Descartes Course repository
         uses: actions/checkout@v4
         with:
           ref: main
           repository: uhm-descartes/descartes-modules
-          token: ${{ secrets.DESCARTES_TOKEN }}"
+          # token: ${{ secrets.DESCARTES_TOKEN }}"
           path: descartes-modules
 
       - name: Update CSV and Create Pull Request
