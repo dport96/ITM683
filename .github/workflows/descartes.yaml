@@ -28,22 +28,18 @@ concurrency:
 jobs:
   # Deployment job
   deploy:
-    environment:
-      name: descartes-course
-      url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
       - name: Checkout current repository
         uses: actions/checkout@v4
         with:
+          ref: main
           path: current-repo
-
-      - name: Set Git Main Branch
-        run: git config --global init.defaultBranch main
       
       - name: Remote Descartes Course repository
         uses: actions/checkout@v4
         with:
+          ref: main
           repository: uhm-descartes/descartes-modules
           token: ${{ secrets.DESCARTES_TOKEN }}"
           path: descartes-modules
