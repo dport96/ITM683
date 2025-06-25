@@ -24,7 +24,7 @@ morea_course: "ITM 683"
 # morea_head_breadcrumb_label: "CNN Site"
 morea_course_name: "Business Intelligence and Analytics"
 morea_description: "This course provides an introduction to business intelligence and analytics, focusing on data analysis, visualization, and decision-making processes. Students will learn to use various tools and techniques to extract insights from data, enabling informed business decisions."
-
+morea_prerequisites: "BUS 619"
 
 # INTERNAL CONFIGURATION: The following fields are not normally edited by users.
 markdown: kramdown
