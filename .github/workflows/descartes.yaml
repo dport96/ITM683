@@ -41,7 +41,7 @@ jobs:
         with:
           ref: main
           repository: uhm-descartes/descartes-modules
-          # token: ${{ secrets.DESCARTES_TOKEN }}"
+          token: "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" # ${{ secrets.DESCARTES_TOKEN }}"
           path: descartes-modules
 
       - name: Update CSV and Create Pull Request
