@@ -15,7 +15,7 @@ on:
 
 # Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
 permissions:
-  contents: read
+  contents: write
   pages: write
   id-token: write
 
@@ -33,15 +33,12 @@ jobs:
       - name: Checkout current repository
         uses: actions/checkout@v4
         with:
-          ref: main
           path: current-repo
       
       - name: Checkout Descartes Course repository
         uses: actions/checkout@v4
         with:
-          ref: main
           repository: uhm-descartes/descartes-modules
-          token: "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" # ${{ secrets.DESCARTES_TOKEN }}"
           path: descartes-modules
 
       - name: Update CSV and Create Pull Request
