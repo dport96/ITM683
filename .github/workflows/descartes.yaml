@@ -3,7 +3,7 @@
 # separate terms of service, privacy policy, and support
 # documentation.
 
-# Sample workflow for building and deploying a Jekyll site to GitHub Pages
+# Workflow to register the DESCARTES Course with the UMH DESCARTES Course Sites page.
 name: Register Descartes Course Site
 
 on:
@@ -16,7 +16,7 @@ on:
 
 # Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
 permissions:
-  contents: read
+  contents: write
   pages: write
   id-token: write
 
@@ -30,7 +30,7 @@ jobs:
   # Deployment job
   deploy:
     environment:
-      name: github-pages
+      name: descartes-course
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
@@ -43,14 +43,14 @@ jobs:
         uses: actions/checkout@v4
         with:
           repository: uhm-descartes/descartes-modules
-          token: ${{ secrets.DESCARTES_TOKEN }}"
+          token: ${{ secrets.COURSE_TOKEN }}"
           path: descartes-modules
 
       - name: Update CSV and Create Pull Request
         env:
-          DEPLOY_URL: ${{ steps.deployment.outputs.page_url }}
+          COURSE_URL: ${{ steps.deployment.outputs.page_url }}
           COURSE_REPOSITORY: ${{ github.repository }}
-          DESCARTES_TOKEN: ${{ secrets.DESCARTES_TOKEN }}
+          COURSE_TOKEN: ${{ secrets.COURSE_TOKEN }}
         run: |
           # Extract course name, course full name, and description from _config.yml
           if [ -f "current-repo/_config.yml" ]; then
@@ -75,8 +75,8 @@ jobs:
           cd descartes-modules
           
           # Debug: Check if token is available
-          if [ -z "$DESCARTES_TOKEN" ]; then
-            echo "ERROR: DESCARTES_TOKEN secret is not set!"
+          if [ -z "$COURSE_TOKEN" ]; then
+            echo "ERROR: COURSE_TOKEN secret is not set!"
             exit 1
           fi
           
@@ -92,14 +92,14 @@ jobs:
           CSV_FILE="course-sites/descartes-courses.csv"
           
           # Check if the exact entry already exists (with full name and description)
-          EXPECTED_ENTRY="$COURSE_NAME,$DEPLOY_URL,$COURSE_FULL_NAME,$COURSE_DESCRIPTION,$COURSE_PREREQUISITES,$COURSE_REPOSITORY"
+          EXPECTED_ENTRY="$COURSE_NAME,$COURSE_URL,$COURSE_FULL_NAME,$COURSE_DESCRIPTION,$COURSE_PREREQUISITES,$COURSE_REPOSITORY"
           if grep -Fxq "$EXPECTED_ENTRY" "$CSV_FILE"; then
             echo "Entry '$EXPECTED_ENTRY' already exists in CSV file. Skipping update."
             exit 0
           fi
           
           # Check if an entry with same course name and URL exists (but potentially different full name or description or prerequisites or repository)
-          PARTIAL_ENTRY="$COURSE_NAME,$DEPLOY_URL"
+          PARTIAL_ENTRY="$COURSE_NAME,$COURSE_URL"
           if grep -q "^$PARTIAL_ENTRY," "$CSV_FILE"; then
             echo "Found entry with same course and URL but different full name/description/prerequisites/repository. Will update entry."
             NEEDS_UPDATE=true
@@ -118,11 +118,11 @@ jobs:
           if grep -q "^$COURSE_NAME," "$CSV_FILE"; then
             # Update existing entry with full name and description
             sed -i.bak "s|^$COURSE_NAME,.*|$EXPECTED_ENTRY|g" "$CSV_FILE"
-            echo "Updated existing $COURSE_NAME entry with: $DEPLOY_URL, full name: $COURSE_FULL_NAME, and description: $COURSE_DESCRIPTION"
+            echo "Updated existing $COURSE_NAME entry with: $COURSE_URL, full name: $COURSE_FULL_NAME, and description: $COURSE_DESCRIPTION"
           else
             # Append new entry with full name and description
             echo "$EXPECTED_ENTRY" >> "$CSV_FILE"
-            echo "Added new $COURSE_NAME entry with: $DEPLOY_URL, full name: $COURSE_FULL_NAME, and description: $COURSE_DESCRIPTION"
+            echo "Added new $COURSE_NAME entry with: $COURSE_URL, full name: $COURSE_FULL_NAME, and description: $COURSE_DESCRIPTION"
           fi
           
           # Check if there are changes
@@ -133,12 +133,12 @@ jobs:
           
           # Commit and push changes
           git add "$CSV_FILE"
-          git commit -m "Update $COURSE_NAME deploy URL, full name, and description: $DEPLOY_URL"
+          git commit -m "Update $COURSE_NAME deploy URL, full name, and description: $COURSE_URL"
           git push origin "$BRANCH_NAME"
           
           # Create pull request using GitHub CLI
           gh pr create \
             --title "Update $COURSE_NAME deploy URL, full name, and description" \
-            --body "Automatically generated PR to update $COURSE_NAME course site URL to: $DEPLOY_URL with full name: $COURSE_FULL_NAME and description: $COURSE_DESCRIPTION" \
+            --body "Automatically generated PR to update $COURSE_NAME course site URL to: $COURSE_URL with full name: $COURSE_FULL_NAME and description: $COURSE_DESCRIPTION" \
             --head "$BRANCH_NAME" \
             --base main
