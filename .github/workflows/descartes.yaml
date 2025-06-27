@@ -40,6 +40,7 @@ jobs:
         with:
           repository: uhm-descartes/descartes-modules
           path: descartes-modules
+          token: ${{ secrets.DESCARTES_TOKEN }}
 
       - name: Update CSV and Create Pull Request
         env:
@@ -75,8 +76,6 @@ jobs:
           git config --local user.name "UHM DESCARTES Action Bot"
           git config --local user.email "uhmnrt@hawaii.edu"
           git config --local user.password "$GH_TOKEN"
-
-          git remote set-url origin git@github.com:uhm-descartes/descartes-modules.git
           
           echo "Check if the exact entry already exists (with full name and description)"
           EXPECTED_ENTRY="$COURSE_NAME,$COURSE_URL,$COURSE_FULL_NAME,$COURSE_DESCRIPTION,$COURSE_PREREQUISITES,$COURSE_REPOSITORY"
