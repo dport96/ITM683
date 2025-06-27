@@ -43,6 +43,7 @@ jobs:
 
       - name: Update CSV and Create Pull Request
         env:
+          GH_TOKEN: ${{ github.token }}
           COURSE_URL: ${{ steps.deployment.outputs.page_url }}
           COURSE_REPOSITORY: ${{ github.repository }}
           DESCARTES_COURSES_DIR: "descartes-modules"
