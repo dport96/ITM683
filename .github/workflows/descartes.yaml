@@ -70,6 +70,9 @@ jobs:
           fi
 
           cd $DESCARTES_COURSES_DIR
+
+          echo "Authenticate to GitHub"
+          gh auth login
           
           echo "Configure git"
           git config --local user.name "UHM DESCARTES Action Bot"
