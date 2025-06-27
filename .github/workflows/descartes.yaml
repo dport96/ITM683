@@ -117,7 +117,7 @@ jobs:
           echo "Commit and push changes"
           git add "$DESCARTES_COURSES_CSV"
           git commit -m "Update $COURSE_NAME deploy URL, full name, and description"
-          git push origin "$BRANCH_NAME"
+          #git push origin "$BRANCH_NAME"
           
           echo "Create pull request using GitHub CLI"
           gh pr create \
