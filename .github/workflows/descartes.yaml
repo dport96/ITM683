@@ -66,7 +66,7 @@ jobs:
             COURSE_PREREQUISITES=$(echo "$COURSE_PREREQUISITES" | sed 's/,/;/g')
           else
             echo "ERROR: _config.yml not found!"
-            exit 1
+            exit 11
           fi
 
           cd $DESCARTES_COURSES_DIR
