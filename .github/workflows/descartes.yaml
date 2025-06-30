@@ -30,6 +30,10 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
+      - name: Get Deployment URL
+        id: deployment
+        uses: actions/configure-pages@v4
+
       - name: Checkout current repository
         uses: actions/checkout@v4
         with:
@@ -45,12 +49,12 @@ jobs:
       - name: Update CSV and Create Pull Request
         env:
           GH_TOKEN: ${{ secrets.DESCARTES_TOKEN }}
-          COURSE_URL: ${{ steps.deployment.outputs.page_url }}
+          COURSE_URL: ${{ steps.deployment.outputs.base_url }}
           COURSE_REPOSITORY: ${{ github.repository }}
           DESCARTES_COURSES_DIR: "descartes-modules"
           DESCARTES_COURSES_CSV: "course-sites/descartes-courses.csv"
         run: |
-          echo "Extract course name, course full name, and description from _config.yml"
+          echo "Extract course name, course full name, description, and prerequisites from _config.yml"
           if [ -f "current-repo/_config.yml" ]; then
             COURSE_NAME=$(grep "^morea_course:" current-repo/_config.yml | sed 's/morea_course: *//' | tr -d '"' | tr '[:lower:]' '[:upper:]')
             echo "Found course name: $COURSE_NAME"
@@ -63,6 +67,15 @@ jobs:
           else
             echo "ERROR: _config.yml not found!"
             exit 11
+          fi
+
+          if [ -z "$COURSE_URL" ]; then
+            echo "Pages deployment not configured"
+            exit 1
+          fi
+          if [ -z "$COURSE_NAME" ]; then
+            echo "No MOREA Course Name defined in _config.yaml"
+            exit 1
           fi
 
           cd $DESCARTES_COURSES_DIR
