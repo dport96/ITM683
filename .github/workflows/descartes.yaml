@@ -92,28 +92,30 @@ jobs:
             exit 0
           fi
           
-          echo "Check if an entry with same course name and URL exists (but potentially different full name or description or prerequisites or repository)"
-          PARTIAL_ENTRY="$COURSE_NAME,$COURSE_URL"
-          if grep -q "^$PARTIAL_ENTRY," "$DESCARTES_COURSES_CSV"; then
-            echo "Found entry with same course and URL but different full name/description/prerequisites/repository. Will update entry."
-            NEEDS_UPDATE=true
-          elif grep -q "^$COURSE_NAME," "$DESCARTES_COURSES_CSV"; then
-            echo "Found entry with same course name but different URL/full name/description/prerequisites/repository. Will update entry."
+          echo "Check if an entry with same course name exists (but potentially different full name or description or prerequisites or repository)"
+          PARTIAL_ENTRY="\"$COURSE_NAME\","
+          if grep -q "^$PARTIAL_ENTRY" "$DESCARTES_COURSES_CSV"; then
+            echo "Found entry with same course name. Will update entry."
             NEEDS_UPDATE=true
           else
             echo "No existing entry found. Will add new entry."
-            NEEDS_UPDATE=true
+            NEEDS_INSERT=true
           fi
           
+          if [ -z "$NEEDS_UPDATE" ] && [ -z "$NEEDS_INSERT" ]; then
+            echo "No update or insert needed. Exiting."
+            exit 0
+          fi
+
           echo "Create a new branch"
           BRANCH_NAME="update-${COURSE_NAME// /}-$(date +%s)"
           git checkout -b "$BRANCH_NAME"
-          
-          if grep -q "^$COURSE_NAME," "$DESCARTES_COURSES_CSV"; then
+
+          if [ ! -z "$NEEDS_UPDATE" ]; then
             echo "Update existing entry with full name and description"
-            sed -i.bak "s|^$COURSE_NAME,.*|$EXPECTED_ENTRY|g" "$DESCARTES_COURSES_CSV"
+            sed -i.bak "s|^$PARTIAL_ENTRY.*|$EXPECTED_ENTRY|g" "$DESCARTES_COURSES_CSV"
             echo "Updated existing $COURSE_NAME entry with: $COURSE_URL, full name: $COURSE_FULL_NAME, and description: $COURSE_DESCRIPTION"
-          else
+          elif [ ! -z "$NEEDS_INSERT" ]; then
             echo "Append new entry with full name and description"
             echo -e "\n$EXPECTED_ENTRY" >> "$DESCARTES_COURSES_CSV"
             sed -i '/^\s*$/d' "$DESCARTES_COURSES_CSV"
@@ -122,6 +124,7 @@ jobs:
           
           echo "Check if there are changes"
           if git diff --quiet; then
+            # TODO: Remove the branch if no changes to commit
             echo "No changes to commit"
             exit 0
           fi
