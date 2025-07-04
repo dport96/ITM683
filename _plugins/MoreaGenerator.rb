@@ -756,14 +756,14 @@ module Morea
     # Writes out the file module-info.js to the top-level directory.
     # This file contains a variable assignment to a literal object containing module and prereq info.
     def write_module_info_file
-      module_file_contents = @site.config['morea_course'] + ' = {' + "\n"
+      module_file_contents = @site.config['morea_course'].downcase.gsub(/\s+/, "") + ' = {' + "\n"
       module_file_contents += get_module_json_string(@site)
       module_file_contents += "\n" + '};'
       File.open(@module_file_path, 'w') { |file| file.write(module_file_contents) }
       @site.static_files << Jekyll::StaticFile.new(@site, @site.source, '', @module_file_name)
     end
 
-    # Create the object literal representing and array of module object literals and an array of prereq object literals.
+    # Create the object literal representing an array of module object literals and an array of prereq object literals.
     def get_module_json_string(site)
       json = "modules: ["
       site.config['morea_module_pages'].each do |mod|
