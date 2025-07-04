@@ -758,7 +758,7 @@ module Morea
     def write_module_info_file
       module_file_contents = @site.config['morea_course'].downcase.gsub(/\s+/, "") + ' = {' + "\n"
       module_file_contents += get_module_json_string(@site)
-      module_file_contents += "\n" + '};\nexport default ' + @site.config['morea_course'].downcase.gsub(/\s+/, "") + ';'
+      module_file_contents += "\n" + "};\nexport default " + @site.config['morea_course'].downcase.gsub(/\s+/, "") + ';'
       File.open(@module_file_path, 'w') { |file| file.write(module_file_contents) }
       @site.static_files << Jekyll::StaticFile.new(@site, @site.source, '', @module_file_name)
     end
