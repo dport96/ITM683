@@ -8,8 +8,12 @@
 name: Synchronize with Template
 
 on:
+  # Runs on schedule: 1:00 AM HAST on Monday
   schedule:
-    - cron:  "0 1 * * MON"
+    - cron:  "0 11 * * MON"
+  # Runs on pushes targeting the default branch
+  push:
+    branches: ["main"]
   # Allow this workflow to be manually triggered
   workflow_dispatch:
 
@@ -19,7 +23,6 @@ permissions:
   contents: write
   id-token: write
   pull-requests: write
-  pages: write
 
 # Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
 # However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
@@ -44,16 +47,6 @@ jobs:
         if: github.repository != env.SOURCE_REPOSITORY
         with:
           token: ${{ secrets.DESCARTES_TOKEN }}
-          fetch-depth: 0
-
-      # Debug step to verify repository context
-      - name: Debug Repository Info
-        if: github.repository != env.SOURCE_REPOSITORY
-        run: |
-          echo "Current repository: ${{ github.repository }}"
-          echo "Source repository: ${{ env.SOURCE_REPOSITORY }}"
-          echo "Actor: ${{ github.actor }}"
-          git config --list | grep -E "(user|remote)" || true
 
       # Doc: https://github.com/marketplace/actions/actions-template-sync
       - name: Synchronize

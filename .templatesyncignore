@@ -1,0 +1,6 @@
+# Do not update these files/directories from the morea template
+_config.yml
+_config.yaml
+morea
+module-info.js
+.gitignore
